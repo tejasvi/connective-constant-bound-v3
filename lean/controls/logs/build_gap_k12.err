@@ -1,0 +1,13 @@
+k=12 rules=PBXbSTU72q pass 1: 2826 states, 16 waves (0.0s)
+k=12 rules=PBXbSTU72q pass 2: 2826 states, 16 waves (0.1s)
+rows: 14535 candidate entries, 4-byte ids (0.1s)
+rows filled (0.1s)
+live states 2826 (0.1s)
+   round 0: lambda in [2.708955573255, 2.708955573255] (51 its), 2284 choices changed (0.1s)
+   round 1: lambda in [2.694849793231, 2.694849793231] (61 its), 920 choices changed (0.1s)
+   round 2: lambda in [2.693756819432, 2.693756819432] (58 its), 161 choices changed (0.1s)
+   round 3: lambda in [2.693725369581, 2.693725369581] (53 its), 34 choices changed (0.1s)
+   round 4: lambda in [2.693725165096, 2.693725165096] (44 its), 1 choices changed (0.1s)
+   round 5: lambda in [2.693725157681, 2.693725157682] (38 its), 0 choices changed (0.1s)
+min v over live states: 2.610e-02
+outputs written (0.1s)

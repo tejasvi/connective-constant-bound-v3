@@ -1,0 +1,39 @@
+name = "Saw38aControls"
+version = "0.1.0"
+defaultTargets = ["CtlCheck"]
+
+[leanOptions]
+relaxedAutoImplicit = false
+autoImplicit = false
+
+# The checker (core Lean only), compiled to native code for native_decide (a copy of ../Saw38aCore).
+[[lean_lib]]
+name = "Saw38aCore"
+globs = ["Saw38aCore", "Saw38aCore.+"]
+precompileModules = true
+
+# Build-time loader of the certificate data (a copy of ../L38Loader.lean).
+[[lean_lib]]
+name = "L38Loader"
+precompileModules = true
+
+# One data module per control certificate (written by gen_ctl.py).
+[[lean_lib]]
+name = "CtlData"
+globs = ["CtlData", "CtlData.+"]
+precompileModules = true
+
+# One native_decide theorem per control.
+[[lean_lib]]
+name = "CtlCheck"
+globs = ["CtlCheck.+"]
+
+# #eval reports: verdict, failing states, time.
+[[lean_lib]]
+name = "CtlReport"
+globs = ["CtlReport.+"]
+
+# Extra: several chunks per certificate, checkRange and checkRangePar (written by gen_ctl_par.py).
+[[lean_lib]]
+name = "CtlCheckPar"
+globs = ["CtlCheckPar.+"]

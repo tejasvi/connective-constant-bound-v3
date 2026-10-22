@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use these programs, these certificates or the Lean formalization, please cite the paper."
+title: "Certificates, programs and Lean formalization for “An upper bound for the connective constant of the square lattice”"
+authors:
+  - family-names: Tomar
+    given-names: Tejasvi Singh
+    orcid: "https://orcid.org/0000-0003-4668-3639"
+license: Apache-2.0
+repository-code: "https://github.com/tejasvi/connective-constant-bound-v3"
+doi: 10.5281/zenodo.23551536
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23551538
+    description: "The file of entries k28f.chosen.xz of the certificate of order 28"
+preferred-citation:
+  type: article
+  title: "An upper bound for the connective constant of the square lattice"
+  authors:
+    - family-names: Tomar
+      given-names: Tejasvi Singh
+      orcid: "https://orcid.org/0000-0003-4668-3639"
+  doi: 10.5281/zenodo.23551535
+  year: 2026

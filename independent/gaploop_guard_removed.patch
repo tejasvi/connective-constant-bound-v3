@@ -1,0 +1,15 @@
+--- a/saw.cpp
++++ b/saw.cpp
+@@ -178,11 +178,7 @@
+             auto inbox = [&](C q) { return x0 <= q.x && q.x <= x1 && y0 <= q.y && q.y <= y1; };
+             auto interior = [&](C q) { return inbox(q) && !g.has(q) && g.seen[(q.y + OFF) * G + q.x + OFF] != g.sgen; };
+             if (interior(nA)) continue;      // the walk is inside
+-            if (Dend) {
+-                bool touch = false;
+-                for (int k = 0; k < 4; k++) { C q = {nA.x + DX[k], nA.y + DY[k]}; if (interior(q)) touch = true; }
+-                if (touch) continue;
+-            }
++            (void)Dend;   // AUDIT NEGATIVE CONTROL: gap-loop fix removed (D = A allowed even if A touches the interior)
+             for (int a = i + 1; a < j; a++) {
+                 int nx = c.c[a - 1].x - c.c[a].x, ny = c.c[a - 1].y - c.c[a].y;
+                 int ddx = c.c[a + 1].x - c.c[a].x, ddy = c.c[a + 1].y - c.c[a].y;

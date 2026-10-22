@@ -1,0 +1,5 @@
+check38a: N=2924 K=12 start=0 Vzero=0 (children of V=0 states with V>0: 0; V=0 subgraph acyclic: 1)
+  no-child slots: occupied 1641, trapped 335; children verified 6762; child cells in E 69055, dead (a) 932, (b) 128, (c) 194
+  failing states 16 (first: 242)
+  max ratio LAM = 9538444858171518 / 3540745356779801 ~ 2.693908738708745 (first state attaining it: 1249)
+VERDICT: FAIL
